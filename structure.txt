@@ -1,0 +1,110 @@
+Playwright tutorial
+	Intro
+		History
+		Vs Cypress, Selenium
+		Why it's cooler
+			Timeouts
+			No stale elements
+	Architecture
+		Drivers
+	Installation
+		npm i playwright --save-dev
+		npx playwright init
+		Drivers
+		Config
+			base url  -> should be set
+			run server -> should be set
+		VS Code extension
+	My first test (d01)
+		Run (headless, no-headless)
+		Skip
+		Debug
+		Exercise e01
+	Dynamic elements (d02)
+		get
+		Exercise e02:
+			Make test plan for displaying vs not the errors
+	Locators
+		Roles, XPath, selectors, placeholders
+		Example (from 1): goto + locator + click + validate
+			Show in Dev Tools
+			Inspector
+		Exercise (e03)
+			3 boxes (including placeholders ) + button
+			Write 1 test in 3 different ways
+				Roles, Placeholders, XPath
+	Assertions
+		List
+		Exercise (e04)
+			Buttons and checkboxes
+			Write tests that check buttons behave correctly.
+	CodeGen
+		Show on d01(?)
+		Exercise (e05) 	
+			Dropdown
+			Write a test plan & tests
+			Use codegen & manual.
+			 
+	Different Browsers
+		Example: run with another
+	Browser interaction	
+		Navigation (back/forward)
+		Example Navigation (a03, d04) 
+		Exercise 
+			Page1 textbox + button -> Page2 shows text from page 1, textbox , button-> Page3 shows text from both -> back, check that the text is correct -> back check the text text is correct -> forward, text is correct-> forward, title is text
+		Browser context
+		Example	
+			different browsers / same browser
+		Exercise (a08)
+			Open two pages, one posts info to the second, second posts info, refresh the first one, shows the result
+		Frames
+			Example
+				Page containing frame, get the frame and find the control
+			Exercise: Make sure that in the frame appears the right image and not the other images
+	Trace/debug tools
+		Debugging
+			Example (one of former)
+			Pick Locator
+		Trace viewer
+			Record
+			Play
+		page.pause
+		headed mode
+		Screenshots
+			Exercise
+				Create a screenshot
+	API tests (a11, d07)
+		Example
+			Counter starts at 0, can reset through API
+		Exercise	(e10)
+			Write a test that proves the operation succeeded
+	code gen 
+		Exercise (e11)
+				https://demo.guru99.com/test/newtours/index.php
+				Calculate and add assert sum less than...
+				Bonus: Improve test
+	Dynamic things
+		Dialogs 
+			Getting rid of errors
+				Example
+		Waiting and timeouts
+	Grouping
+		Before each/all
+		describe
+		POMs
+			Example 
+				Translate (Example Navigation)
+			Exercise
+				From webinar
+
+
+->	Summary exercises
+		https://www.saucedemo.com/
+			Login page	
+				Test plan + tests
+			Cont...
+	
+	Authentication
+		browser storage?
+		Example by resetting storageState, Avoid authentication
+		

@@ -1,0 +1,68 @@
+Run everything on all browsers!
+
+Demos
+    v d01 -	My first test
+		goto + locator + click + validate
+		Page with title, input box and label that updates based on the input. button is disabled in the beginning.
+    v d02 - Dynamic elements
+        goto + 2 text boxes + button. Clicking, shows an error, typing cleans the error 
+    v d03 - Navigation
+            Textbox empty
+			Button causing navigation with the text to the next page, check url, then going back checks the textbox is empty
+    v d04 - Browser Navigation (a03)
+    v d05 - Browser context
+    v d06 - Frames
+    v d07 - API (a10) 
+  ->  d08 - Getting rid of Error Dialogs, blocking element, increasing timeout
+    d09 - POMs
+             Transform string  (Example Navigation)
+    d10 - StorageState - Avoid authentication
+
+exercises
+    v  e01 - for a01
+    v  e02 - for a02
+    v  e03 - for a04 
+    v  e04 - for a05
+    v  e05 - for a06
+    v  e06 - Page1 textbox + button -> Page2 shows text from page 1, textbox , button-> Page3 shows text from both -> back, 
+    v  e07-  for a08   
+    v  e08 - Make sure that in the frame appears the right image and not the other images
+    v  e09 - write three test that create a screenshot including each frame content. clean up the files afterwards
+    v  e10 - API
+    v  e11 - for <https://demo.guru99.com/test/newtours/index.php>
+    e12 - POM (From webinar)
+    e13 - Summary (https://www.saucedemo.com/ )
+
+Solutions
+    v  e01 - for d01
+            1. Try with a different input
+            2. Check that button is disabled in the beginning
+            3. Check that button is enabled after filling the input
+            4. Check that after clearing the text box button is disabled
+			5. Organize the tests
+    v  e02 - for d02
+		    1. Create test plan for all cases and errors
+            2. Write clean tests
+    v e03 - 1. On startup all boxes are empty (using getByRoll().all())
+            2. When typing in the second box, the value appears in the other two (using getByPlaceHolder)
+            3. After clearing the boxes are empty (using XPath)
+    v e04 - 1. Write a test plan
+            2. Write the tests that the behavior of buttons and checkbox is as expected
+    v e05 - 1. Write a test plan
+            2. Write the tests that check the display based on selection
+
+    v e06 - for a07
+         	1. Write a test that checks that the URLs contain the right information
+            2. Write a test that goes to page 3, then goes back twice. 
+                 Check that the URL and texts are displayed correctly and the input boxes are empty.
+    v e07-  Open the app on two pages in a browser 
+            Write a test plan and implement for the chat functionality       
+    v e08 - Make sure that in the frame appears the right image and not the other images
+    v e09 - for a10
+            write three test that create a screenshot including each frame content
+            clean up the files afterwards
+	v e10 - Write a test that proves the operation succeeded
+    v e11 - Code gen
+	e12 - <define test from webinar>
+->    e13 - Login page (Test plan + tests), Cont...
+	
